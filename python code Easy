@@ -1,0 +1,30 @@
+r=open("class input.txt","r")
+w=open("class output.txt","w")
+sumE,avg,count=0,0,0
+for i in r:
+    count,sum=count+1,0
+    n=i.replace(":",",").replace('\n',"").split(",")
+    for i in n[1:]:
+        sum+=float(i)
+    sumE+=sum
+    w.write("the sum for "+str(n[0])+" is "+str(sum)+"\n")
+w.write("Average is "+(format((sumE/count),".2f")))
+r.close()
+w.close()
+
+
+
+
+
+#inputfile is "class input.txt".
+
+mohammad:90,60,80,10
+ahmad:90,80,70,10
+jamal:90,70,80,10
+
+
+#  outputis " class output.txt".
+the sum for mohammad is 240.0
+the sum for ahmad is 250.0
+the sum for jamal is 250.0
+Average is 246.67
