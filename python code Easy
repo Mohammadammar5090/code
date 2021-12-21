@@ -3,7 +3,7 @@ w=open("class output.txt","w")
 sumE,avg,count=0,0,0
 for i in r:
     count,sum=count+1,0
-    n=i.replace(":",",").replace('\n',"").split(",")
+    n=i.replace('\n',"").split(",")
     for i in n[1:]:
         sum+=float(i)
     sumE+=sum
@@ -18,9 +18,9 @@ w.close()
 
 #inputfile is "class input.txt".
 
-mohammad:90,60,80,10
-ahmad:90,80,70,10
-jamal:90,70,80,10
+mohammad,90,60,80,10
+ahmad,90,80,70,10
+jamal,90,70,80,10
 
 
 #  outputis " class output.txt".
